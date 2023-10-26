@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.box {
+  border: 3px solid black;
+  width: 400px;
+  height: 400px;
+  margin: 2rem auto;
+}
+.snake {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  animation: snake 8s linear infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes snake {
+  0% {
+    transform: translate(0);
+  }
+  5% {
+    transform: translateX(350px);
+  }
+  10% {
+    transform: translate(350px, 350px);
+  }
+  15% {
+    transform: translateY(350px);
+  }
+  20% {
+    transform: translateY(50px);
+    background-color: rgb(196, 103, 103);
+  }
+
+  25% {
+    transform: translate(300px, 50px);
+    background-color: rgb(42, 165, 149);
+  }
+  30% {
+    transform: translate(300px, 300px);
+    background-color: rgb(93, 165, 42);
+  }
+  35% {
+    transform: translate(50px, 300px);
+    background-color: rgb(165, 42, 151);
+  }
+  40% {
+    transform: translate(50px, 100px);
+    background-color: rgb(153, 42, 165);
+  }
+  45% {
+    transform: translate(250px, 100px);
+    background-color: rgb(89, 42, 165);
+  }
+  50% {
+    transform: translate(250px, 250px);
+    background-color: rgb(14, 2, 2);
+  }
+  55% {
+    transform: translate(100px, 250px);
+  }
+  60% {
+    transform: translate(100px, 150px);
+    background-color: rgb(101, 42, 165);
+  }
+  65% {
+    transform: translate(200px, 150px);
+    background-color: brown;
+  }
+  70% {
+    transform: translate(200px, 200px);
+    background-color: rgb(138, 165, 42);
+  }
+  75% {
+    transform: translate(150px, 200px);
+    background-color: rgb(165, 42, 118);
+  }
+  85% {
+    transform: translate(150px, 150px);
+    background-color: rgba(42, 165, 71, 0.576);
+  }
+  100% {
+    transform: translate(1500px, 150px);
+    background-color: rgb(76, 149, 180);
+  }
+}
